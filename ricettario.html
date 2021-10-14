@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ricettario</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+	<style type="text/css">
+
+    html,body{
+        margin: 0;
+        padding: 0;
+    }    
+
+    /*Classi per i font*/
+
+
+
+    /*Classi di design*/
+
+    .aligntext{
+      text-align: center;
+  }
+
+
+
+
+
+  #startpage{
+      min-height: 100vh;
+      background-image:url(immages/schiacciatinepatate.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  h1{
+
+     font-size: 120px;
+     margin-top: 0;
+ }
+
+ #subtitle{
+
+     color: #ff0000;
+
+ }
+
+ #antipasti{
+     min-height: 100vh;
+     background-image:url(immages/palleparmiggiano.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+ }
+
+ h2{
+     font-size: 120px;
+     margin-top: 0;
+     margin-bottom: 15px;
+ }
+
+ img{
+    max-width: 100%;
+}
+
+#primi{
+ min-height: 100vh;
+ background-image:url(immages/carbonara.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+#secondi{
+ min-height: 100vh;
+ background-image:url(immages/pettodipollo.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+#dolci{
+ min-height: 100vh;
+ background-image:url(immages/dolce.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/*Flex*/
+.center{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+</style>
+</head>
+<body>
+	<hero id="startpage" class="center">
+		<h1>Ricettario di Matteo</h1>
+		<h3 id="subtitle">Le ricette migliori dal 1991</h3>
+	</hero>
+
+	<section id="menu">
+		<h3>Ecco la lista delle ricette:</h3>
+		<div>
+          <ul>
+             <li>
+                <h5>
+                  <a href="#antipasti">Antipasti:</a> 
+              </h5>
+              <ul>
+                  <li>
+                   <a href="#Schiacciatine">Schiacciatine di patate</a>
+               </li>
+
+               <li>
+                   <a href="#bruschette">Bruschette che Cracco spostati proprio</a>
+               </li>
+           </ul>
+       </li>
+
+       <li>
+          <h5>
+              <a href="#primi">Primi:</a> 
+          </h5>
+          <ul>
+              <li>
+               <a href="#carbonara">Carbonara</a>
+           </li>
+
+           <li>
+               <a href="#pastaalpesto">Pasta al pesto</a>
+           </li>
+       </ul>
+   </li>
+
+   <li>
+      <h5>
+          <a href="#secondi">Secondi:</a> 
+      </h5>
+      <ul>
+          <li>
+           <a href="#pettodipollo">Petto di pollo alla pizzaiola</a>
+       </li>
+   </ul>
+</li>
+
+<li>
+  <h5>
+      <a href="#dolci">Dolci:</a> 
+  </h5>
+  <ul>
+      <li>
+       <a href="#tiramisu">Tiramisù</a>
+   </li>
+</ul>
+</li>
+
+
+</ul>
+</div>
+</section>
+
+<section id="antipasti" class="center">
+  <h2 id="imantipasti">Antipasti</h2>	
+</section>	
+
+<!--Prova-->	
+<section id="Schiacciatine" class="accordion">
+
+    <div class="accordion-item">
+   
+        <h3 class="accordion-header">
+            <a href="#ricetta"  class="accordion-button"  data-bs-toggle="collapse" >Schiacciatine di patate</a>
+        </h3>    
+
+    <div id="ricetta" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+   
+    <img src="immages/schiacciatinepatate.jpg">
+    <div id="ingradienti">
+        <h4>Ingradienti per 4 persone:</h4>
+        <ul>
+        	<li>
+        		500g di patate
+        	</li>
+
+        	<li>
+        		80g di farina
+        	</li>
+
+        	<li>
+        		3g di lievito istantaneo per preparazioni salate
+        	</li>
+
+        	<li>
+        		Un cucchiaio di olio extravergine di oliva 
+        	</li>
+
+        	<li>
+        		sale quanto basta
+        	</li>
+
+        </ul>
+
+    </div>
+
+    <div id="preparazione">
+       <h4>Preparazione:</h4>
+       <ol>
+          <li>
+             Per preparare le focaccine di patate per prima cosa mettete a cuocere in una pentola piena d’acqua le patate.
+
+         </li>
+
+         <li>
+             Scegliete delle patate di media grandezza in modo da velocizzare la cottura.
+         </li>
+
+         <li>
+             Raccogliete il purè di patate in una ciotola capiente e aggiungete il sale, il lievito istantaneo, l’olio extra vergine di oliva e la farina 00.
+         </li>
+
+         <li>
+             Impastate con un cucchiaio di legno l’impasto di patate e poi quando inizierà a diventare un panetto continuate con la punta delle dita.
+
+         </li>
+
+         <li>
+             Trasferite il panetto su un piano da lavoro infarinato e dividetelo a pezzi, a me ne sono venuti 5 con queste dosi ma potete anche farli più piccoli in modo da averne di più.
+
+         </li>
+
+         <li>
+             Con le mani infarinate arrotondate ogni pezzetto in modo da formare un piccolo panino e poi sempre con la mano allargateli in modo da formare le schiacciatine di patate.
+
+         </li>
+
+         <li>
+             In una padella fate scaldare l’olio extra vergine di oliva.
+
+         </li>
+
+         <li>
+             Cuocete le schiacciatine di patate in padella per qualche minuto rigirandole spesso con una spatola fin quando non saranno ben dorate.
+         </li>
+
+         <li>
+             Cuocete le schiacciatine veloci in forno già caldo, modalità statica a 200° per 15-20 minuti circa rigirandole di tanto in tanto.
+
+         </li>
+     </ol>
+ </div>
+  </div>
+</div>
+</section>
+<!--seconda parte-->
+<section id="bruschette">
+    <h3>Bruschette che Cracco spostati proprio</h3>
+    <img src="immages/bruschetta.jpg">
+    <div id="ingradientibruschetta">
+        <h4>Ingradienti per 4 persone:</h4>
+        <ul>
+        	<li>
+        		Pane casereccio 8 fette
+        	</li>
+
+        	<li>
+        		Basilico 8 foglie
+        	</li>
+
+        	<li>
+        		Olio extravergine d'oliva quanto basta
+        	</li>
+
+        	<li>
+        		Pepe, sale ed origano quanto basta
+        	</li>
+
+        	<li>
+        		Pomodori ramati maturi 500g
+        	</li>
+
+        </ul>
+
+    </div>
+
+    <div id="preparazione2">
+       <h4>Preparazione:</h4>
+       <ol>
+          <li>
+            lavate i pomodori, divideteli a metà 1 e poi riduceteli a cubetti
+
+        </li>
+
+        <li>
+         Versate i pomodori in una ciotola e aggiungete le foglie di basilico, precedentemente lavate e asciugate
+     </li>
+
+     <li>
+         Condite con un pizzico di origano, sale, pepe e olio.
+     </li>
+
+     <li>
+         Mescolate bene e lasciate insaporire per circa 30 minuti. Il riposo è facoltativo, ma lo consigliamo perchè si amalgamino profumi e sapori.
+
+     </li>
+
+     <li>
+        tagliate il pane a fette 
+
+    </li>
+
+    <li>
+     Trascorso il tempo di riposo, scaldate bene una griglia e adagiatevi sopra le fette di pane
+
+ </li>
+
+ <li>
+     Grigliatele da entrambi i lati finché non risulteranno abbrustolite 
+
+ </li>
+
+ <li>
+     A questo punto distribuite l’insalata di pomodori sulle fette di pane
+ </li>
+
+ <li>
+    condite ancora con un filo d’olio 11 e fate riposare per un paio di minuti, poi servite le vostre bruschette al pomodoro
+
+</li>
+</ol>
+</div>
+</section>    
+
+
+<section id="primi" class="center">
+  <h2 class="aligntext" id="imprimi">Primi</h2>	
+</section>
+
+
+<section id="carbonara">
+    <h3>Carbonara</h3>
+    <img src="immages/carbonara.jpg">
+    <div id="ingradienticarbonara">
+        <h4>Ingradienti per 4 persone:</h4>
+        <ul>
+        	<li>
+        		Guanciale 120g
+        	</li>
+
+        	<li>
+        		Spaghetti 320g
+        	</li>
+
+        	<li>
+        		5 rossi d'uovo
+        	</li>
+
+        	<li>
+        		Pepe, sale quanto basta
+        	</li>
+
+        	<li>
+        		Pecorino quanto basta 
+        	</li>
+
+        </ul>
+
+    </div>
+
+    <div id="preparazione3">
+       <h4>Preparazione:</h4>
+       <ol>
+          <li>
+            Iniziate ad accendere  l'acqua della pasta 
+
+        </li>
+
+        <li>
+         nel frattempo scaldate una pentola e versateci un po' di pepe per farlo tostare
+     </li>
+
+     <li>
+         quando sentite il profumo del pepe versate il guanciale e aspettate finche' non diventa dorato poi spegnete il fuoco
+     </li>
+
+     <li>
+         Preparate la crema: aggiungete i rossi d'uovo in una ciotola e mischiate con un po' di sale e pepe 
+
+     </li>
+
+     <li>
+        adesso aggiungete pecorino romano fino a che non si addensa la crema
+
+    </li>
+
+    <li>
+     una volta che la crema è pronta scolate la pasta e versatela sulla pentola dove avete cotto il guanciale
+
+ </li>
+
+ <li>
+
+
+
+ </li>
+
+ <li>
+     A questo punto mischiate la pasta col guanciale e poi spegnete la pentola e versate la crema A FUOCO SPENTO 
+ </li>
+
+ <li>
+     Aggiungete il pecorino e un altro po' di pepe ed impiattate!
+
+ </li>
+</ol>
+</div>
+</section>
+
+
+
+
+
+<section id="pastaalpesto">
+    <h3>Pasta al pesto</h3>
+    <img src="immages/pastaalpesto.jpg">
+    <div id="ingradientipastaalpesto">
+        <h4>Ingradienti per 4 persone:</h4>
+        <ul>
+        	<li>
+        		lorum ipsum
+        	</li>
+
+        	<li>
+        		dolor sit amet
+        	</li>
+
+        	<li>
+        		consectetur adipisicing elit
+        	</li>
+
+        	<li>
+             sed do eiusmod
+
+         </li>
+
+         <li>
+          tempor incididunt ut labore
+      </li>
+
+  </ul>
+
+</div>
+
+<div id="preparazione4">
+   <h4>Preparazione:</h4>
+   <ol>
+      <li>
+        et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation 
+
+    </li>
+
+    <li>
+        eullamco laboris nisi ut aliquip ex ea commodo
+    </li>
+
+    <li>
+     consequat. Duis aute irure dolor in reprehenderit
+ </li>
+
+ <li>
+     Excepteur sint occaecat cupidatat non
+
+ </li>
+
+ <li>
+     in voluptate velit esse
+
+ </li>
+
+ <li>
+     cillum dolore eu fugiat nulla pariatur.
+
+ </li>
+
+ <li>
+
+    proident, sunt in culpa
+
+</li>
+
+<li>
+    qui officia deserunt mollit 
+</li>
+
+<li>
+ anim id est laborum.
+</li>
+</ol>
+</div>
+</section>
+
+<section id="secondi"class="center">
+  <h2 class="aligntext" id="imsecondi">secondi</h2>	
+</section>
+
+<section id="pettodipollo">
+    <h3>Petto di pollo alla pizzaiola</h3>
+    <img src="immages/pettodipollo.jpg">
+    <div id="ingradientipettodipollo">
+        <h4>Ingradienti per 4 persone:</h4>
+        <ul>
+        	<li>
+        		lorum ipsum
+        	</li>
+
+        	<li>
+        		dolor sit amet
+        	</li>
+
+        	<li>
+        		consectetur adipisicing elit
+        	</li>
+
+        	<li>
+             sed do eiusmod
+
+         </li>
+
+         <li>
+          tempor incididunt ut labore
+      </li>
+
+  </ul>
+
+</div>
+
+<div id="preparazione5">
+   <h4>Preparazione:</h4>
+   <ol>
+      <li>
+        et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation 
+
+    </li>
+
+    <li>
+        eullamco laboris nisi ut aliquip ex ea commodo
+    </li>
+
+    <li>
+     consequat. Duis aute irure dolor in reprehenderit
+ </li>
+
+ <li>
+     Excepteur sint occaecat cupidatat non
+
+ </li>
+
+ <li>
+     in voluptate velit esse
+
+ </li>
+
+ <li>
+     cillum dolore eu fugiat nulla pariatur.
+
+ </li>
+
+ <li>
+
+    proident, sunt in culpa
+
+</li>
+
+<li>
+    qui officia deserunt mollit 
+</li>
+
+<li>
+ anim id est laborum.
+</li>
+</ol>
+</div>
+</section>
+
+<section id="dolci" class="center">
+  <h2 class="aligntext" id="imdolci">dolci</h2>	
+</section>	
+
+<section id="tiramisu">
+    <h3>Tiramisù</h3>
+    <img src="immages/tiramisu.jpg">
+    <div id="ingradientitiramisu">
+        <h4>Ingradienti per 4 persone:</h4>
+        <ul>
+        	<li>
+        		lorum ipsum
+        	</li>
+
+        	<li>
+        		dolor sit amet
+        	</li>
+
+        	<li>
+        		consectetur adipisicing elit
+        	</li>
+
+        	<li>
+             sed do eiusmod
+
+         </li>
+
+         <li>
+          tempor incididunt ut labore
+        </li>
+
+        </ul>
+
+   </div>
+
+
+<div id="preparazione6">
+   <h4>Preparazione:</h4>
+   <ol>
+      <li>
+        et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation 
+
+    </li>
+
+    <li>
+        eullamco laboris nisi ut aliquip ex ea commodo
+    </li>
+
+    <li>
+     consequat. Duis aute irure dolor in reprehenderit
+ </li>
+
+ <li>
+     Excepteur sint occaecat cupidatat non
+
+ </li>
+
+ <li>
+     in voluptate velit esse
+
+ </li>
+
+ <li>
+     cillum dolore eu fugiat nulla pariatur.
+
+ </li>
+
+ <li>
+
+    proident, sunt in culpa
+
+</li>
+
+<li>
+    qui officia deserunt mollit 
+</li>
+
+<li>
+ anim id est laborum.
+</li>
+</ol>
+</div>
+</section>
+
+
+<section>
+   <footer>
+      INSTAGRAM MATTEO:_mattromano
+  </footer>
+</section>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
